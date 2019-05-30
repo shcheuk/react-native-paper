@@ -43,7 +43,7 @@ const DEFAULT_TOOLBAR_HEIGHT = 56;
 const DEFAULT_STATUSBAR_HEIGHT_EXPO =
   global.__expo && global.__expo.Constants
     ? global.__expo.Constants.statusBarHeight
-    : undefined;
+    : StatusBar.currentHeight;
 const DEFAULT_STATUSBAR_HEIGHT = Platform.select({
   android: DEFAULT_STATUSBAR_HEIGHT_EXPO,
   ios:
